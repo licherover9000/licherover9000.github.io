@@ -1,7 +1,8 @@
 # Abhay Rawat — portfolio site
 
-Personal portfolio in a retro light style: five projects across mobile apps and
-data analytics. Plain HTML, CSS and JavaScript — no frameworks, no build step.
+Personal portfolio in a retro, GitHub-dark style (#0d1117 paper, purple/red/pink/blue
+accents): five projects across mobile apps and data analytics. Plain HTML, CSS and
+JavaScript — no frameworks, no build step.
 
 **Live site:** https://licherover9000.github.io
 
@@ -10,7 +11,7 @@ data analytics. Plain HTML, CSS and JavaScript — no frameworks, no build step.
 | File | What it is |
 |---|---|
 | `index.html` | All content — hero, projects, skills, about, contact |
-| `styles.css` | Retro design tokens (cream paper, ink borders, hard shadows) and all styling |
+| `styles.css` | Retro design tokens (GitHub-dark palette, hard shadows) and all styling |
 | `script.js` | Mobile menu, footer year, scroll reveal, scrollspy |
 | `GUIDE.pdf` | Step-by-step guide to how everything works (local only, not deployed) |
 
