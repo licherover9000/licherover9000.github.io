@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhay Rawat — Flutter Developer &amp; Data Analyst</title>
+  <meta name="description" content="Portfolio of Abhay Rawat — Flutter apps with real-time sync and hand-written encryption, plus credit-risk and product analytics in SQL, Python and Power BI.">
+  <meta property="og:title" content="Abhay Rawat — Flutter Developer &amp; Data Analyst">
+  <meta property="og:description" content="Five projects: mobile apps that sync in real time, an AES-256 engine written from scratch, and analytics pipelines spanning 2.26M loans and 100K e-commerce orders.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='10' fill='%23FAF1DE' stroke='%2323201A' stroke-width='4'/%3E%3Ctext x='32' y='43' font-family='Arial Black, sans-serif' font-size='26' font-weight='900' fill='%2323201A' text-anchor='middle'%3EAR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="#top">AR<span class="brand-star">★</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#projects" data-nav="projects">Projects</a>
+        <a href="#skills" data-nav="skills">Skills</a>
+        <a href="#about" data-nav="about">About</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </div>
+      <button class="icon-btn nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-hi reveal">★ hi, i&rsquo;m</p>
+        <h1 class="hero-name reveal">Abhay Rawat<span class="hero-dot">.</span></h1>
+        <p class="hero-tagline reveal">I build <mark>mobile apps</mark> and <mark>data products</mark> — end to end.<span class="cursor" aria-hidden="true"></span></p>
+        <p class="hero-body reveal">
+          Flutter apps with real-time sync and hand-written encryption on one side;
+          credit-risk and product analytics in SQL, Python and Power BI on the other.
+          I like taking a project the whole way — from an empty repo or a raw CSV to
+          something you can actually use, and defend.
+        </p>
+        <div class="hero-chips reveal" aria-label="Core technologies">
+          <span class="chip chip-teal">Flutter</span>
+          <span class="chip chip-yellow">Dart</span>
+          <span class="chip chip-pink">Python</span>
+          <span class="chip chip-blue">SQL</span>
+          <span class="chip chip-coral">Power BI</span>
+          <span class="chip chip-teal">C++</span>
+        </div>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#projects">See my work ↓</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>FLUTTER ✦ DART ✦ PYTHON ✦ SQL ✦ POWER BI ✦ C++ ✦ FIREBASE ✦ DUCKDB ✦ A/B TESTING ✦ RIVERPOD ✦&nbsp;</span>
+        <span>FLUTTER ✦ DART ✦ PYTHON ✦ SQL ✦ POWER BI ✦ C++ ✦ FIREBASE ✦ DUCKDB ✦ A/B TESTING ✦ RIVERPOD ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section container" id="projects">
+      <h2 class="section-title reveal"><span class="section-index">01</span> Projects</h2>
+
+      <!-- Flagship: credit risk -->
+      <article class="window card-feature reveal">
+        <div class="window-bar">
+          <span class="win-dots" aria-hidden="true"><i class="dot-coral"></i><i class="dot-yellow"></i><i class="dot-teal"></i></span>
+          <span class="win-title">risk_pipeline.sql</span>
+          <span class="win-x" aria-hidden="true">✕</span>
+        </div>
+        <div class="window-body card-feature-inner">
+          <div class="card-feature-main">
+            <div class="card-top">
+              <span class="status status-done">Completed</span>
+              <span class="card-domain">Data Analytics</span>
+            </div>
+            <h3>Credit Risk &amp; Loan Default Analytics</h3>
+            <p class="card-lead">
+              End-to-end credit-risk pipeline on 2.26M Lending Club loans — from raw CSV
+              to a defended approval-cutoff decision.
+            </p>
+            <p class="card-body-text">
+              SQL feature engineering in DuckDB (window functions, vintage curves, segment
+              risk tables), calibrated gradient-boosting PD models in Python with strict
+              leakage discipline, a 4-page executive Power BI dashboard, and a
+              risk-committee memo that defends the cutoff in business terms — expected
+              credit loss, not model accuracy.
+            </p>
+            <p class="card-finding">
+              <strong>The finding:</strong> grade F&ndash;G, debt-consolidation, low-income
+              borrowers default at 50&ndash;58% — <em>2.9&times; the book average</em>.
+            </p>
+            <ul class="tags" aria-label="Technologies used">
+              <li>DuckDB</li><li>SQL</li><li>Python</li><li>scikit-learn</li><li>Power BI</li><li>Parquet</li>
+            </ul>
+            <a class="card-link" href="https://github.com/licherover9000/credit-risk-analytics" target="_blank" rel="noopener">View the code &rarr;</a>
+          </div>
+          <div class="card-feature-metrics" aria-label="Headline results">
+            <div class="metric">
+              <span class="metric-value">71%</span>
+              <span class="metric-label">approval rate preserved at the chosen cutoff</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">21.7 &rarr; 15.1%</span>
+              <span class="metric-label">default rate in the approved book</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">&#8377;3.1 Cr</span>
+              <span class="metric-label">credit loss saved per &#8377;100 Cr disbursed</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value">0.713</span>
+              <span class="metric-label">out-of-time AUC (Gini 0.426)</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="card-grid">
+        <!-- E-commerce product analytics -->
+        <article class="window reveal">
+          <div class="window-bar">
+            <span class="win-dots" aria-hidden="true"><i class="dot-coral"></i><i class="dot-yellow"></i><i class="dot-teal"></i></span>
+            <span class="win-title">ab_test.py</span>
+            <span class="win-x" aria-hidden="true">✕</span>
+          </div>
+          <div class="window-body">
+            <div class="card-top">
+              <span class="status status-done">Completed</span>
+              <span class="card-domain">Data &middot; Product</span>
+            </div>
+            <h3>E-commerce Product Analytics</h3>
+            <p class="card-lead">
+              Funnel, cohorts, RFM and an A/B-test readout on 100K Olist orders —
+              the &ldquo;metric moved, investigate it&rdquo; case, done for real.
+            </p>
+            <ul class="card-points">
+              <li>Root-caused a &minus;14.6pp on-time-delivery drop to a long-haul carrier failure using segment cuts across state, category and payment type.</li>
+              <li>Proper experiment readout: powered at 28,458/arm for a 0.8pp MDE; +1.05pp lift (p&nbsp;=&nbsp;0.0002), CUPED cut variance 17.4% &rarr; ship.</li>
+              <li>SQL funnel, cohort-retention triangle and NTILE RFM segments in DuckDB — window functions throughout.</li>
+              <li>Written up as an experiment readout + metric-investigation memo, like internal analyst docs.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies used">
+              <li>DuckDB</li><li>SQL</li><li>Python</li><li>A/B testing</li><li>CUPED</li><li>Power BI</li>
+            </ul>
+            <a class="card-link" href="https://github.com/licherover9000/ecommerce-analytics" target="_blank" rel="noopener">View the code &rarr;</a>
+          </div>
+        </article>
+
+        <!-- SyncWave -->
+        <article class="window reveal">
+          <div class="window-bar">
+            <span class="win-dots" aria-hidden="true"><i class="dot-coral"></i><i class="dot-yellow"></i><i class="dot-teal"></i></span>
+            <span class="win-title">syncwave.dart</span>
+            <span class="win-x" aria-hidden="true">✕</span>
+          </div>
+          <div class="window-body">
+            <div class="card-top">
+              <span class="status status-active">Core complete</span>
+              <span class="card-domain">Mobile &middot; Real-time</span>
+            </div>
+            <h3>SyncWave</h3>
+            <p class="card-lead">
+              A listen-together music app — create a 6-character room and listen in
+              perfect sync with friends, no sign-up required.
+            </p>
+            <ul class="card-points">
+              <li>Multi-source playback engine — YouTube, Apple (iTunes) and Audius behind one dual-backend audio layer.</li>
+              <li>Shared real-time queue with drag-to-reorder, host controls, presence and auto-advance on Firebase Realtime Database.</li>
+              <li>Falls back to an offline local-file player when the network drops.</li>
+              <li>Locked-down, pen-tested database security rules; the UI never touches Firebase directly — everything goes through a service layer.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Flutter</li><li>Riverpod 3</li><li>Firebase</li><li>Realtime DB</li><li>just_audio</li><li>go_router</li>
+            </ul>
+            <a class="card-link" href="https://github.com/licherover9000/syncwave" target="_blank" rel="noopener">View the code &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Cipher Vault -->
+        <article class="window reveal">
+          <div class="window-bar">
+            <span class="win-dots" aria-hidden="true"><i class="dot-coral"></i><i class="dot-yellow"></i><i class="dot-teal"></i></span>
+            <span class="win-title">cipher_engine.cpp</span>
+            <span class="win-x" aria-hidden="true">✕</span>
+          </div>
+          <div class="window-body">
+            <div class="card-top">
+              <span class="status status-done">Shipped</span>
+              <span class="card-domain">Mobile &middot; Systems</span>
+            </div>
+            <h3>The Cipher Vault</h3>
+            <p class="card-lead">
+              A 100% offline encrypted journal, task list and focus timer — with an
+              AES-256 engine written by hand in C++.
+            </p>
+            <ul class="card-points">
+              <li>Note bodies encrypted by a hand-written C++ AES-256 engine called from Dart over FFI — verified against the NIST FIPS-197 test vector. Plain text never touches disk.</li>
+              <li>PIN gate stores only a SHA-256 hash; the key is derived in memory and never persisted.</li>
+              <li>Deep Work mode: flip the phone face-down and the accelerometer switches to a dark focus theme and starts a Pomodoro session.</li>
+              <li>No cloud, no network, no telemetry.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Flutter</li><li>C++</li><li>Dart FFI</li><li>Hive</li><li>CMake / NDK</li><li>sensors_plus</li>
+            </ul>
+            <a class="card-link" href="https://github.com/licherover9000/cipher_vault" target="_blank" rel="noopener">View the code &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Sitheer -->
+        <article class="window reveal">
+          <div class="window-bar">
+            <span class="win-dots" aria-hidden="true"><i class="dot-coral"></i><i class="dot-yellow"></i><i class="dot-teal"></i></span>
+            <span class="win-title">sitheer.dart</span>
+            <span class="win-x" aria-hidden="true">✕</span>
+          </div>
+          <div class="window-body">
+            <div class="card-top">
+              <span class="status status-active">In progress</span>
+              <span class="card-domain">Mobile &middot; AI</span>
+            </div>
+            <h3>Sitheer</h3>
+            <p class="card-lead">
+              An exam-prep and productivity app — tasks, schedule, focus timer, and a
+              GATE question bank with an AI mentor.
+            </p>
+            <ul class="card-points">
+              <li>Full prep module: subject roadmaps, a previous-year question bank, mock tests with attempt review, and progress tracking.</li>
+              <li>&ldquo;Ask Tayari&rdquo; AI mentor — Gemini and OpenAI clients behind an intent classifier, with an offline fallback service.</li>
+              <li>Tasks, schedule and focus timer backed by Firebase — Auth, Firestore and Cloud Functions.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Flutter</li><li>Provider</li><li>Firebase</li><li>Firestore</li><li>Gemini</li><li>OpenAI</li>
+            </ul>
+            <a class="card-link" href="https://github.com/licherover9000/sitheer" target="_blank" rel="noopener">View the code &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section container" id="skills">
+      <h2 class="section-title reveal"><span class="section-index">02</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-head skill-head-teal">App Development</h3>
+          <ul>
+            <li>Flutter &amp; Dart</li>
+            <li>Riverpod &amp; Provider</li>
+            <li>Firebase — Auth, Realtime DB, Firestore</li>
+            <li>Hive (local storage)</li>
+            <li>go_router, just_audio</li>
+            <li>Dart FFI &rarr; native code</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-head skill-head-yellow">Data &amp; Analytics</h3>
+          <ul>
+            <li>SQL — window functions, CTEs (DuckDB / Postgres dialect)</li>
+            <li>Python — pandas, scikit-learn</li>
+            <li>Model calibration &amp; leakage discipline</li>
+            <li>A/B testing — power, MDE, CUPED</li>
+            <li>Power BI &amp; DAX</li>
+            <li>EDA &amp; business framing</li>
+          </ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-head skill-head-pink">Systems &amp; Tooling</h3>
+          <ul>
+            <li>C++ (AES-256 engine from scratch)</li>
+            <li>CMake / Android NDK</li>
+            <li>Git &amp; GitHub</li>
+            <li>Firebase security rules</li>
+            <li>REST APIs</li>
+            <li>Architecture documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section container" id="about">
+      <h2 class="section-title reveal"><span class="section-index">03</span> About</h2>
+      <article class="window reveal">
+        <div class="window-bar">
+          <span class="win-dots" aria-hidden="true"><i class="dot-coral"></i><i class="dot-yellow"></i><i class="dot-teal"></i></span>
+          <span class="win-title">about_me.txt</span>
+          <span class="win-x" aria-hidden="true">✕</span>
+        </div>
+        <div class="window-body about-body">
+          <p>
+            I learn by shipping complete things. Across my projects a pattern shows up:
+            start from a written spec, build in small verified steps, document the
+            architecture, and finish the last 10% — security rules pen-tested, encryption
+            verified against NIST vectors, model decisions defended in a committee-style memo.
+          </p>
+          <p>
+            On the app side I work in Flutter and Dart — real-time Firebase backends,
+            state management with Riverpod, and native C++ over FFI when the problem
+            calls for it. On the data side I work in SQL and Python — window-function
+            feature engineering, calibrated models, and Power BI dashboards built for
+            decisions, not decoration.
+          </p>
+          <!-- TODO(Abhay): add a short line here about your background / education and
+               what kind of role you're looking for. -->
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section container" id="contact">
+      <h2 class="section-title reveal"><span class="section-index">04</span> Contact</h2>
+      <div class="contact-box reveal">
+        <p class="contact-lead">Have a role, a project, or just a question? My inbox is open.</p>
+        <a class="btn btn-primary btn-lg" href="mailto:heisenbergwaltuh25@gmail.com">heisenbergwaltuh25@gmail.com</a>
+        <div class="contact-links">
+          <a class="btn btn-ghost" href="https://github.com/licherover9000" target="_blank" rel="noopener">GitHub</a>
+          <!-- TODO(Abhay): add your LinkedIn, then uncomment:
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+          -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> ABHAY RAWAT ★ BUILT BY HAND — HTML, CSS &amp; JS, NO FRAMEWORKS ★ HOSTED FREE ON GITHUB PAGES</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
