@@ -41,5 +41,4 @@ GitHub rebuilds the site automatically within a minute or two.
 
 Search `index.html` for `TODO(Abhay)`:
 
-- [ ] Add the LinkedIn button in the Contact section
 - [ ] Add a background/education line to the About section
