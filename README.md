@@ -14,6 +14,7 @@ JavaScript — no frameworks, no build step.
 | `styles.css` | Retro design tokens (GitHub-dark palette, hard shadows) and all styling |
 | `script.js` | Mobile menu, footer year, scroll reveal, scrollspy |
 | `GUIDE.pdf` | Step-by-step guide to how everything works (local only, not deployed) |
+| `EDITING-GUIDE.pdf` | Hands-on guide: edit & publish, add images/videos, grow a blog (local only) |
 
 ## Preview locally
 
