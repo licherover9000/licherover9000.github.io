@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello, world — Abhay Rawat</title>
+  <meta name="description" content="How this site is built, what this blog is for — and the style cheat sheet for future posts.">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='10' fill='%230d1117' stroke='%238957e5' stroke-width='4'/%3E%3Ctext x='32' y='43' font-family='Arial Black, sans-serif' font-size='26' font-weight='900' fill='%23e6edf3' text-anchor='middle'%3EAR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a class="brand" href="../index.html">AR<span class="brand-star">★</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#about">About</a>
+        <a href="index.html" class="active">Blog</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+      <button class="icon-btn nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section container">
+
+      <article class="window post">
+        <div class="window-bar">
+          <span class="win-dots" aria-hidden="true"><i class="dot-red"></i><i class="dot-pink"></i><i class="dot-blue"></i></span>
+          <span class="win-title">2026-07-05-hello-world.txt</span>
+          <span class="win-x" aria-hidden="true">✕</span>
+        </div>
+        <div class="window-body">
+          <p class="post-meta">5 July 2026 · Abhay Rawat</p>
+          <h1>Hello, world</h1>
+
+          <p>
+            This site — and now this blog — is hand-written HTML, CSS and JavaScript,
+            hosted free on GitHub Pages. No frameworks, no build step: what you read
+            is exactly what sits in my editor.
+          </p>
+          <p>
+            I plan to write here about what I build — Flutter apps, SQL pipelines,
+            the occasional hand-rolled encryption engine — and about what breaks
+            along the way, because that is where the actual learning lives.
+          </p>
+          <!-- TODO(Abhay): the two paragraphs above are a starter — make them yours.
+               Everything below is a living style guide: keep it, or delete it once
+               you know the ropes. To write the NEXT post: copy this file, rename it
+               (YYYY-MM-DD-your-slug.html), edit, then add a line to blog/index.html. -->
+
+          <h2>What a post can contain</h2>
+          <p>
+            A paragraph is just a <code>&lt;p&gt;</code> tag. Inline code like
+            <code>flutter run</code> uses <code>&lt;code&gt;</code>. Longer code goes
+            in a <code>&lt;pre&gt;</code> block:
+          </p>
+<pre>-- from the credit-risk pipeline: default rate by grade
+SELECT grade,
+       AVG(default_flag) AS default_rate
+FROM loans
+GROUP BY grade
+ORDER BY grade;</pre>
+          <p>Lists work the way you'd expect:</p>
+          <ul class="card-points">
+            <li>Bullet points reuse the site's arrow style.</li>
+            <li>Good for step-by-steps and takeaways.</li>
+          </ul>
+          <p>And a pull-quote for the sentence you want remembered:</p>
+          <blockquote>A leaderboard isn't a hypothesis test.</blockquote>
+          <!-- An image would look like this (put the file in ../assets/):
+          <img src="../assets/my-screenshot.png" alt="Describe the image" loading="lazy">
+          -->
+
+          <a class="card-link" href="index.html">&larr; All posts</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> ABHAY RAWAT ★ BUILT BY HAND — HTML, CSS &amp; JS, NO FRAMEWORKS ★ HOSTED FREE ON GITHUB PAGES</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

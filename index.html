@@ -6,7 +6,7 @@
   <title>Abhay Rawat — Flutter Developer &amp; Data Analyst</title>
   <meta name="description" content="Portfolio of Abhay Rawat — Flutter apps with real-time sync and hand-written encryption, plus credit-risk and product analytics in SQL, Python and Power BI.">
   <meta property="og:title" content="Abhay Rawat — Flutter Developer &amp; Data Analyst">
-  <meta property="og:description" content="Five projects: mobile apps that sync in real time, an AES-256 engine written from scratch, and analytics pipelines spanning 2.26M loans and 100K e-commerce orders.">
+  <meta property="og:description" content="Six projects: mobile apps that sync in real time, an AES-256 engine written from scratch, and analytics pipelines spanning 2.26M loans and 100K e-commerce orders.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0d1117">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='2' y='2' width='60' height='60' rx='10' fill='%230d1117' stroke='%238957e5' stroke-width='4'/%3E%3Ctext x='32' y='43' font-family='Arial Black, sans-serif' font-size='26' font-weight='900' fill='%23e6edf3' text-anchor='middle'%3EAR%3C/text%3E%3C/svg%3E">
@@ -24,6 +24,7 @@
         <a href="#projects" data-nav="projects">Projects</a>
         <a href="#skills" data-nav="skills">Skills</a>
         <a href="#about" data-nav="about">About</a>
+        <a href="blog/">Blog</a>
         <a href="#contact" data-nav="contact">Contact</a>
       </div>
       <button class="icon-btn nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
@@ -245,6 +246,36 @@
               <li>Flutter</li><li>Provider</li><li>Firebase</li><li>Firestore</li><li>Gemini</li><li>OpenAI</li>
             </ul>
             <a class="card-link" href="https://github.com/licherover9000/sitheer" target="_blank" rel="noopener">View the code &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Quick-commerce price intelligence -->
+        <article class="window reveal">
+          <div class="window-bar">
+            <span class="win-dots" aria-hidden="true"><i class="dot-red"></i><i class="dot-pink"></i><i class="dot-blue"></i></span>
+            <span class="win-title">price_intel.sql</span>
+            <span class="win-x" aria-hidden="true">✕</span>
+          </div>
+          <div class="window-body">
+            <div class="card-top">
+              <span class="status status-active">In progress</span>
+              <span class="card-domain">Data &middot; Pricing</span>
+            </div>
+            <h3>Quick-Commerce Price Intelligence</h3>
+            <p class="card-lead">
+              Who's cheapest in India's 10-minute grocery war? A matched-basket price
+              study across Blinkit, Zepto, Instamart, Flipkart Minutes and Amazon Now.
+            </p>
+            <ul class="card-points">
+              <li>A fixed ~40-item basket priced on every platform for the same pincode on the same day — every price normalised to per-100g/ml, so comparisons are apples-to-apples.</li>
+              <li>Wilcoxon signed-rank test on matched unit prices — because a win-rate leaderboard isn't a hypothesis test.</li>
+              <li>SQL leaderboard, discount depth-vs-breadth and assortment coverage in DuckDB, exported for Power BI.</li>
+              <li>Data honesty built in: every row is flagged SAMPLE or COLLECTED — nothing presented as fact until it's measured.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies used">
+              <li>DuckDB</li><li>SQL</li><li>Python</li><li>Wilcoxon test</li><li>Power BI</li>
+            </ul>
+            <a class="card-link" href="https://github.com/licherover9000/quick-commerce-intel" target="_blank" rel="noopener">View the code &rarr;</a>
           </div>
         </article>
       </div>
